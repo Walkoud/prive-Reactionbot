@@ -8,7 +8,7 @@ const yourID = "494167718522519552"; //Instructions on how to get this: https://
 const setupCMD = "!walkoudreact"
 let initialMessage = `**Réagis avec l'émojie en bas pour passer le captcha !**`;
 const roles = ["Captcha"];
-const reactions = ["卍"];
+const reactions = ["🔮"];
 
 
 //If there isn't a reaction for every role, scold the user!
