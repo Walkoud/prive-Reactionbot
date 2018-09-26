@@ -47,4 +47,25 @@ bot.on('raw', event => {
         let user = msg.guild.members.get(event.d.user_id);
         
         if (msg.author.id == bot.user.id && msg.content != initialMessage){
+            
+              var re = `\\*\\*"(.+)?(?="\\*\\*)`;
+            var role = msg.content.match(re)[1];
+        
+            if (user.id != bot.user.id){
+                var roleObj = msg.guild.roles.find('name', role);
+                var memberObj = msg.guild.members.get(user.id);
+                
+                if (event.t === "MESSAGE_REACTION_ADD"){
+                    memberObj.addRole(roleObj)
+                } else {
+                    memberObj.removeRole(roleObj);
+                }
+            }
+        }
+        })
+ 
+    }   
+});
+
+bot.login(process.env.TOKEN)
        
