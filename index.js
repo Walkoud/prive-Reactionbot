@@ -8,7 +8,7 @@ const yourID = "494167718522519552"; //Instructions on how to get this: https://
 const setupCMD = "!walkoudreact"
 let initialMessage = `**Réagis avec l'émojie en bas pour passer le captcha !**`;
 const roles = ["Captcha"];
-const reactions = [":white_check_mark:"];
+const reactions = ["卍"];
 
 
 //If there isn't a reaction for every role, scold the user!
@@ -18,7 +18,7 @@ if (roles.length !== reactions.length) throw "Roles list and reactions list are 
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-    for (let role of roles) messages.push(`React below to get the **"${role}"** role!`); //DONT CHANGE THIS
+    for (let role of roles) messages.push(`Réagie pour avoir le rôle **"${role}"** !`); //DONT CHANGE THIS
     return messages;
 }
 
