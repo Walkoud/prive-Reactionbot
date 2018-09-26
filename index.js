@@ -4,7 +4,7 @@ const token = "process.env.TOKEN";
 var mention = "SoWalkoud"
 
 //Settings!
-const yourID = ""; //Instructions on how to get this: https://redd.it/40zgse
+const yourID = "494167718522519552"; //Instructions on how to get this: https://redd.it/40zgse
 const setupCMD = "!walkoudreact"
 let initialMessage = `**React to the messages below to receive the associated role. If you would like to remove the role, simply remove your reaction!**`;
 const roles = ["Hacker", "Artist", "Public Relations", "Intern"];
