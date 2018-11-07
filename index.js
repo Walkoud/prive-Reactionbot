@@ -4,7 +4,7 @@ const token = "process.env.TOKEN";
 var mention = "SoWalkoud"
 
 //Settings!
-const yourID = "494167718522519552"; //Instructions on how to get this: https://redd.it/40zgse
+const yourID = "505477787218608128"; //Instructions on how to get this: https://redd.it/40zgse
 const setupCMD = "!walkoudreact"
 let initialMessage = `**Réagis avec l'émojie en bas pour passer le captcha !**`;
 const roles = ["Captcha"];
